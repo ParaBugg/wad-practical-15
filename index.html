@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Web Page</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to My Web Page</h1>
+
+    <p id="date"></p>
+
+    <button onclick="changeContent()">Click Me</button>
+
+    <script>
+        document.getElementById("date").innerHTML =
+            "Today's Date: " + new Date().toLocaleDateString();
+
+        function changeContent() {
+            document.getElementById("heading").innerHTML =
+                "Welcome! Content Changed Dynamically.";
+        }
+    </script>
+</body>
+</html>
